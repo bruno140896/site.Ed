@@ -1,0 +1,40 @@
+body{
+  margin: 0;
+  background: #000;
+}
+
+canvas{
+  display: block;
+}
+
+.music-btn{
+  position: fixed;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 44px;
+  height: 44px;
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,0.18);
+  background: rgba(0,0,0,0.35);
+  color: #fff;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  z-index: 50;
+  backdrop-filter: blur(8px);
+}
+
+.music-btn:hover{
+  background: rgba(0,0,0,0.48);
+}
+
+.music-btn.on{
+  border-color: rgba(0,255,210,0.45);
+  box-shadow: 0 0 0 2px rgba(0,255,210,0.12);
+}
+
+.music-btn svg{
+  fill: currentColor;
+  opacity: 0.92;
+}
